@@ -1,7 +1,7 @@
 // Copyright 2021 ch2oh-ch2oh
 
 #include <TimedDoor.h>
-#include <thread>
+#include <thread>  // NOLINT [build/c++11]
 
 bool TimedDoor::isDoorOpened() {
     return opened;
