@@ -3,7 +3,6 @@
 #ifndef INCLUDE_TIMEDDOOR_H_
 #define INCLUDE_TIMEDDOOR_H_
 
-#include <thread>
 #include <string>
 
 class DoorTimerAdapter;

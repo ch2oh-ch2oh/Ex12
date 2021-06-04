@@ -1,7 +1,7 @@
 // Copyright 2021 ch2oh-ch2oh
 
 #include <TimedDoor.h>
-#include <stdexcept>
+#include <thread>
 
 bool TimedDoor::isDoorOpened() {
     return opened;
@@ -19,15 +19,15 @@ void TimedDoor::lock() {
 
 void TimedDoor::DoorTimeOut() {
     if (opened) {
-        throw std::runtime_error{"close the door!"};
+        throw std::string("close the door!");
     }
 }
 
 void TimedDoor::throwState() {
     if (opened) {
-        throw std::runtime_error("the door is opened!");
+        throw std::string("the door is opened!");
     } else {
-        throw std::runtime_error("the door is closed!");
+        throw std::string("the door is closed!");
     }
 }
 
