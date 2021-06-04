@@ -1,7 +1,10 @@
-// Copyright 2021 GHA Test Team
+// Copyright 2021 ch2oh-ch2oh
 
 #ifndef INCLUDE_TIMEDDOOR_H_
 #define INCLUDE_TIMEDDOOR_H_
+
+#include <thread>
+#include <string>
 
 class DoorTimerAdapter;
 class Timer;

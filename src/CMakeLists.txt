@@ -2,7 +2,6 @@ set(header_path "${${PROJECT_NAME}_SOURCE_DIR}/include")
 set(header ${header_path}/TimedDoor.h)
 set(src TimedDoor.cpp)
 
-
 add_library(${PROJECT_NAME} SHARED
   ${header}
   ${src})
@@ -29,3 +28,4 @@ install(TARGETS ${PROJECT_NAME}.info
 		RUNTIME DESTINATION "${tool_dest}"
     COMPONENT library)
 install(FILES ${header} DESTINATION "${include_dest}")
+
